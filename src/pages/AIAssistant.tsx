@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Bot, Send, Sparkles } from "lucide-react";
+import { Bot, Send } from "lucide-react";
 import { useState } from "react";
 
 const AIAssistant = () => {
@@ -41,36 +41,27 @@ const AIAssistant = () => {
 
       {/* Suggested Queries */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="cursor-pointer hover:shadow-lg transition-shadow border-accent/20">
+        <Card className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-accent">
           <CardContent className="p-4">
-            <div className="flex items-start space-x-2">
-              <Sparkles className="h-4 w-4 text-accent mt-1" />
-              <div>
-                <p className="text-sm font-medium">Why did my spending increase?</p>
-                <p className="text-xs text-muted-foreground mt-1">Analyze recent expense patterns</p>
-              </div>
+            <div>
+              <p className="text-sm font-medium">Why did my spending increase?</p>
+              <p className="text-xs text-muted-foreground mt-1">Analyze recent expense patterns</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="cursor-pointer hover:shadow-lg transition-shadow border-accent/20">
+        <Card className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-accent">
           <CardContent className="p-4">
-            <div className="flex items-start space-x-2">
-              <Sparkles className="h-4 w-4 text-accent mt-1" />
-              <div>
-                <p className="text-sm font-medium">How much should I save?</p>
-                <p className="text-xs text-muted-foreground mt-1">Get personalized savings advice</p>
-              </div>
+            <div>
+              <p className="text-sm font-medium">How much should I save?</p>
+              <p className="text-xs text-muted-foreground mt-1">Get personalized savings advice</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="cursor-pointer hover:shadow-lg transition-shadow border-accent/20">
+        <Card className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-accent">
           <CardContent className="p-4">
-            <div className="flex items-start space-x-2">
-              <Sparkles className="h-4 w-4 text-accent mt-1" />
-              <div>
-                <p className="text-sm font-medium">Budget optimization tips</p>
-                <p className="text-xs text-muted-foreground mt-1">Smart ways to reduce expenses</p>
-              </div>
+            <div>
+              <p className="text-sm font-medium">Budget optimization tips</p>
+              <p className="text-xs text-muted-foreground mt-1">Smart ways to reduce expenses</p>
             </div>
           </CardContent>
         </Card>

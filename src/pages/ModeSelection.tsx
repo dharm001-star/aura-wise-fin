@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Briefcase, UserCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
@@ -34,29 +33,26 @@ const ModeSelection = () => {
             onClick={() => handleModeSelection("gig")}
           >
             <div className="flex flex-col items-center space-y-6">
-              <div className="p-4 rounded-full bg-gradient-primary group-hover:scale-110 transition-transform">
-                <Briefcase className="h-10 w-10 text-primary-foreground" />
-              </div>
-              <div className="space-y-2">
+              <div className="space-y-3 text-center">
                 <h2 className="text-2xl font-bold">Gig Worker</h2>
                 <p className="text-muted-foreground">
                   Freelancer, contractor, or irregular income earner
                 </p>
               </div>
-              <ul className="text-sm text-left space-y-2 text-muted-foreground w-full">
-                <li className="flex items-start">
-                  <span className="text-success mr-2">✓</span>
-                  Variable income tracking
-                </li>
-                <li className="flex items-start">
-                  <span className="text-success mr-2">✓</span>
-                  Project-based insights
-                </li>
-                <li className="flex items-start">
-                  <span className="text-success mr-2">✓</span>
-                  Flexible budgeting
-                </li>
-              </ul>
+              <div className="w-full space-y-3 text-sm text-muted-foreground">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 mr-3 flex-shrink-0"></div>
+                  <span>Variable income tracking</span>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 mr-3 flex-shrink-0"></div>
+                  <span>Project-based insights</span>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 mr-3 flex-shrink-0"></div>
+                  <span>Flexible budgeting</span>
+                </div>
+              </div>
               <Button className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground">
                 Select Gig Worker
               </Button>
@@ -68,29 +64,26 @@ const ModeSelection = () => {
             onClick={() => handleModeSelection("regular")}
           >
             <div className="flex flex-col items-center space-y-6">
-              <div className="p-4 rounded-full bg-gradient-primary group-hover:scale-110 transition-transform">
-                <UserCircle className="h-10 w-10 text-primary-foreground" />
-              </div>
-              <div className="space-y-2">
+              <div className="space-y-3 text-center">
                 <h2 className="text-2xl font-bold">Regular User</h2>
                 <p className="text-muted-foreground">
                   Salaried employee or consistent income earner
                 </p>
               </div>
-              <ul className="text-sm text-left space-y-2 text-muted-foreground w-full">
-                <li className="flex items-start">
-                  <span className="text-success mr-2">✓</span>
-                  Monthly budget planning
-                </li>
-                <li className="flex items-start">
-                  <span className="text-success mr-2">✓</span>
-                  Predictable cash flow
-                </li>
-                <li className="flex items-start">
-                  <span className="text-success mr-2">✓</span>
-                  Savings optimization
-                </li>
-              </ul>
+              <div className="w-full space-y-3 text-sm text-muted-foreground">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 mr-3 flex-shrink-0"></div>
+                  <span>Monthly budget planning</span>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 mr-3 flex-shrink-0"></div>
+                  <span>Predictable cash flow</span>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 mr-3 flex-shrink-0"></div>
+                  <span>Savings optimization</span>
+                </div>
+              </div>
               <Button className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground">
                 Select Regular User
               </Button>
