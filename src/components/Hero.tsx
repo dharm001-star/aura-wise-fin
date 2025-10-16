@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Shield, Bot } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import headerLogo from "@/assets/header-logo.png";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-gradient-to-br from-background via-background to-muted">
       <div className="max-w-6xl w-full mx-auto text-center space-y-8">
         <div className="flex justify-center mb-8 animate-fade-in">
-          <img src={logo} alt="AURA-FIN Logo" className="w-40 h-40 drop-shadow-2xl" />
+          <img src={headerLogo} alt="AURA-FIN Logo" className="w-40 h-40 drop-shadow-2xl" />
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight animate-fade-in">
