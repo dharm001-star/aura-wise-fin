@@ -9,10 +9,8 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
-import logo from "@/assets/logo.png";
 
 const menuItems = [
   { title: "Overview", url: "/dashboard", icon: Home },
@@ -27,17 +25,7 @@ export function DashboardSidebar() {
 
   return (
     <Sidebar className={isCollapsed ? "w-14" : "w-64"}>
-      <div className="p-4 flex items-center justify-between border-b">
-        {!isCollapsed && (
-          <div className="flex items-center space-x-3">
-            <img src={logo} alt="AURA-FIN" className="w-10 h-10" />
-            <span className="font-bold text-lg">AURA-FIN</span>
-          </div>
-        )}
-        <SidebarTrigger />
-      </div>
-
-      <SidebarContent>
+      <SidebarContent className="pt-4">
         <SidebarGroup>
           <SidebarGroupLabel>Main Menu</SidebarGroupLabel>
           <SidebarGroupContent>
