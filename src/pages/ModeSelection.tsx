@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import headerLogo from "@/assets/header-logo.png";
 
 const ModeSelection = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const ModeSelection = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-gradient-to-br from-background via-background to-muted">
       <div className="max-w-4xl w-full mx-auto text-center space-y-8">
-        <img src={logo} alt="AURA-FIN Logo" className="w-32 h-32 mx-auto drop-shadow-xl" />
+        <img src={headerLogo} alt="AURA-FIN Logo" className="w-32 h-32 mx-auto drop-shadow-xl" />
         
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
